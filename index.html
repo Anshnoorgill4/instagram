@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Login (Demo)</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      width: 360px;
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .login-container img {
+      margin-bottom: 25px;
+      width: 175px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #dbdbdb;
+      background-color: #fafafa;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button.login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .or {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .or::before,
+    .or::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    .or span {
+      margin: 0 12px;
+    }
+
+    .social-login button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .fb-btn { background-color: #3b5998; color: white; }
+    .google-btn { background-color: #db4437; color: white; }
+    .twitter-btn { background-color: #1da1f2; color: white; }
+    .email-btn { background-color: #6c757d; color: white; }
+
+    .forgot {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #00376b;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="Instagram" />
+    
+    <form onsubmit="event.preventDefault(); alert('Logged in (demo)');">
+      <input type="text" placeholder="Phone number, username, or email" required />
+      <input type="password" placeholder="Password" required />
+      <button class="login-btn" type="submit">Log In</button>
+    </form>
+
+    <div class="or"><span>OR</span></div>
+
+    <div class="social-login">
+      <button class="fb-btn" onclick="alert('Login with Facebook (demo)')">Log in with Facebook</button>
+      <button class="google-btn" onclick="alert('Login with Google (demo)')">Log in with Google</button>
+      <button class="twitter-btn" onclick="alert('Login with Twitter (demo)')">Log in with Twitter</button>
+      <button class="email-btn" onclick="alert('Login with Email (demo)')">Log in with Email</button>
+    </div>
+
+    <a href="#" class="forgot">Forgot password?</a>
+    
+    <div class="footer">
+      <p>For educational/demo use only</p>
+    </div>
+  </div>
+
+</body>
+</html>
